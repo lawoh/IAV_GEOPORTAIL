@@ -1,0 +1,57 @@
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Prestatation</title>
+	<link rel="stylesheet" href="prestation.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css">
+</head>
+<body>
+
+	<script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<div class="contact-title">
+		<h2>Demande d'autorisation d'utilisation de nos points géodésiques</h2>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<img src="../image/gnss.png"class = "h-75 w-75 rounded mx-auto d-block img-fluid rounded">
+		</div>
+		<div class="col-md-6">
+			<div class="contact-form w-75 ml-3">
+				<form id="contact-form" method="POST" action="commentaire1.php">
+					<input name="username" type="text" class="form-control" placeholder="Nom et Prénom" required><br>
+
+					<input name="email" type="email" class="form-control" placeholder="Adresse mail" required><br>
+
+					<input name="institution" type="text" class="form-control" placeholder="Institution d'appartenance" required><br>
+
+					<input name="activite" type="text" class="form-control" placeholder="Secteur d'activité" required><br>
+
+					<input name="service" type="text" class="form-control" placeholder="Intitulé de la Prestatation" required><br>
+
+					<input name="date" type="text" id="datepick" class="form-control" placeholder="Choisissez une date " required><br>
+
+					<textarea name="info" class="form-control" cols="30" rows="5" placeholder="Autres spécifications" required></textarea><br>
+
+					<input type="submit" class="form-control submit"  name= "submit" value="ENVOYER">
+				</form>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+		$("#datepick").datepicker({dateFormat:'dd-mm-yy'});
+		$("#datepick").show();
+
+		  });
+		
+	</script>
+	
+</body>
+</html>
+
